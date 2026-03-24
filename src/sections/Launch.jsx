@@ -123,8 +123,9 @@ function CountDigit({ val, label, sub, isLive, accent }) {
     <div
       className="shrink-0 relative flex flex-col justify-between overflow-hidden"
       style={{
-        minWidth: 150,
-        padding: '120px 22px',
+        minWidth: 120,
+        maxWidth: 120,
+        padding: '20px 16px',
         borderRight: '1px solid rgba(224,90,30,0.12)',
         borderTop: '1px solid rgba(224,90,30,0.12)',
         borderBottom: '1px solid rgba(224,90,30,0.12)',
@@ -162,7 +163,7 @@ function CountDigit({ val, label, sub, isLive, accent }) {
       <div
         className="relative font-['Bebas_Neue'] leading-none"
         style={{
-          fontSize: 'clamp(2.8rem, 5vw, 4.2rem)',
+          fontSize: 'clamp(2rem, 3.5vw, 2.8rem)',
           background: isLive
             ? `linear-gradient(160deg, #fff8f0 0%, ${accent} 60%, #b83a00 100%)`
             : 'linear-gradient(160deg, rgba(245,213,176,0.35) 0%, rgba(200,120,60,0.2) 100%)',
@@ -528,12 +529,16 @@ export default function Launch({ scrollerRef }) {
             </p>
             <div
               ref={horizontalRef}
-              className="flex gap-0 overflow-x-auto cursor-ew-resize"
+              className="flex gap-0 cursor-ew-resize"
               style={{
+                overflowX: 'auto',
+                overflowY: 'hidden',
                 scrollbarWidth: 'none',
                 msOverflowStyle: 'none',
                 maxWidth: 'min(72%, 700px)',
+                height: 120,
                 borderLeft: '1px solid rgba(224,90,30,0.12)',
+                borderRadius: '2px',
               }}
             >
               {countItems.map(({ val, label, sub, isLive }, i) => (

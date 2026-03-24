@@ -31,5 +31,18 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "vite": "^8.0.2"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohriSumati-ops/journey-to-mars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohriSumati-ops/journey-to-mars/issues"
+  },
+  "homepage": "https://github.com/JohriSumati-ops/journey-to-mars#readme"
 }
