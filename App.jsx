@@ -8,6 +8,8 @@ import Launch from './sections/Launch'
 import SpaceTravel from './sections/SpaceTravel'
 import MarsLanding from './sections/MarsLanding'
 import Exploration from './sections/Exploration'
+import ThankYou from './sections/Thankyou'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
